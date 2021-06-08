@@ -19,11 +19,12 @@ namespace Listici
 
         private void napraviNoviListic_Click(object sender, EventArgs e)
         {
-            DataAccess db = new DataAccess();
-
-            List<Odeljenje> odeljenja = db.GetOdeljenja();
-
-            odeljenja.ForEach(odeljenje => MessageBox.Show(odeljenje.Ime));
+            var frm = new DodajListicForma();
+            frm.Location = this.Location;
+            frm.StartPosition = FormStartPosition.Manual;
+            frm.FormClosing += delegate { this.Show(); };
+            frm.Show();
+            this.Hide();
         }
     }
 }
