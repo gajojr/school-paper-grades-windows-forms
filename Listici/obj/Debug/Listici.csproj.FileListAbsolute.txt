@@ -1,0 +1,13 @@
+C:\Profesionalni projekti\c#\Listici\Listici\bin\Debug\Listici.exe.config
+C:\Profesionalni projekti\c#\Listici\Listici\bin\Debug\Listici.exe
+C:\Profesionalni projekti\c#\Listici\Listici\bin\Debug\Listici.pdb
+C:\Profesionalni projekti\c#\Listici\Listici\obj\Debug\Listici.csprojAssemblyReference.cache
+C:\Profesionalni projekti\c#\Listici\Listici\obj\Debug\Listici.Properties.Resources.resources
+C:\Profesionalni projekti\c#\Listici\Listici\obj\Debug\Listici.csproj.GenerateResource.cache
+C:\Profesionalni projekti\c#\Listici\Listici\obj\Debug\Listici.csproj.CoreCompileInputs.cache
+C:\Profesionalni projekti\c#\Listici\Listici\obj\Debug\Listici.exe
+C:\Profesionalni projekti\c#\Listici\Listici\obj\Debug\Listici.pdb
+C:\Profesionalni projekti\c#\Listici\Listici\bin\Debug\Dapper.dll
+C:\Profesionalni projekti\c#\Listici\Listici\bin\Debug\Dapper.xml
+C:\Profesionalni projekti\c#\Listici\Listici\obj\Debug\Listici.Form1.resources
+C:\Profesionalni projekti\c#\Listici\Listici\obj\Debug\Listici.csproj.CopyComplete
