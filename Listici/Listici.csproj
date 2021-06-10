@@ -68,6 +68,8 @@
     <Compile Include="Odeljenje.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Razredni.cs" />
+    <Compile Include="Ucenik.cs" />
     <EmbeddedResource Include="DodajListicForma.resx">
       <DependentUpon>DodajListicForma.cs</DependentUpon>
     </EmbeddedResource>

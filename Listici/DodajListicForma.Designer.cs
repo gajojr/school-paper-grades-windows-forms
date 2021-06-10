@@ -34,6 +34,7 @@ namespace Listici
             this.label1 = new System.Windows.Forms.Label();
             this.prezimeUcenika = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.razredni = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.sociologijaOcene = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -53,43 +54,46 @@ namespace Listici
             this.label4 = new System.Windows.Forms.Label();
             this.srpskiOcene = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.razredni = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.dodajListic = new System.Windows.Forms.Button();
+            this.ponistiListic = new System.Windows.Forms.Button();
             this.poruka = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // imeUcenika
             // 
-            this.imeUcenika.Location = new System.Drawing.Point(135, 28);
+            this.imeUcenika.Location = new System.Drawing.Point(180, 34);
+            this.imeUcenika.Margin = new System.Windows.Forms.Padding(4);
             this.imeUcenika.Name = "imeUcenika";
-            this.imeUcenika.Size = new System.Drawing.Size(145, 20);
+            this.imeUcenika.Size = new System.Drawing.Size(192, 22);
             this.imeUcenika.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 31);
+            this.label2.Location = new System.Drawing.Point(55, 38);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 13);
+            this.label2.Size = new System.Drawing.Size(83, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Ime ucenika:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(41, 66);
+            this.label1.Location = new System.Drawing.Point(55, 81);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 13);
+            this.label1.Size = new System.Drawing.Size(110, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "Prezime ucenika:";
             // 
             // prezimeUcenika
             // 
-            this.prezimeUcenika.Location = new System.Drawing.Point(135, 63);
+            this.prezimeUcenika.Location = new System.Drawing.Point(180, 78);
+            this.prezimeUcenika.Margin = new System.Windows.Forms.Padding(4);
             this.prezimeUcenika.Name = "prezimeUcenika";
-            this.prezimeUcenika.Size = new System.Drawing.Size(145, 20);
+            this.prezimeUcenika.Size = new System.Drawing.Size(192, 22);
             this.prezimeUcenika.TabIndex = 3;
             // 
             // groupBox1
@@ -114,216 +118,242 @@ namespace Listici
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.srpskiOcene);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(44, 105);
+            this.groupBox1.Location = new System.Drawing.Point(59, 129);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(410, 299);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(547, 368);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ocene";
             // 
+            // razredni
+            // 
+            this.razredni.Location = new System.Drawing.Point(304, 335);
+            this.razredni.Margin = new System.Windows.Forms.Padding(4);
+            this.razredni.Name = "razredni";
+            this.razredni.Size = new System.Drawing.Size(233, 22);
+            this.razredni.TabIndex = 19;
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(128, 272);
+            this.label12.Location = new System.Drawing.Point(171, 335);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(94, 13);
+            this.label12.Size = new System.Drawing.Size(120, 16);
             this.label12.TabIndex = 18;
             this.label12.Text = "Razredni staresina";
             // 
             // sociologijaOcene
             // 
-            this.sociologijaOcene.Location = new System.Drawing.Point(122, 240);
+            this.sociologijaOcene.Location = new System.Drawing.Point(163, 295);
+            this.sociologijaOcene.Margin = new System.Windows.Forms.Padding(4);
             this.sociologijaOcene.Name = "sociologijaOcene";
-            this.sociologijaOcene.Size = new System.Drawing.Size(100, 20);
+            this.sociologijaOcene.Size = new System.Drawing.Size(132, 22);
             this.sociologijaOcene.TabIndex = 17;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(8, 243);
+            this.label11.Location = new System.Drawing.Point(11, 299);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(56, 13);
+            this.label11.Size = new System.Drawing.Size(74, 16);
             this.label11.TabIndex = 16;
             this.label11.Text = "sociologija";
             // 
             // androidOcene
             // 
-            this.androidOcene.Location = new System.Drawing.Point(122, 214);
+            this.androidOcene.Location = new System.Drawing.Point(163, 263);
+            this.androidOcene.Margin = new System.Windows.Forms.Padding(4);
             this.androidOcene.Name = "androidOcene";
-            this.androidOcene.Size = new System.Drawing.Size(100, 20);
+            this.androidOcene.Size = new System.Drawing.Size(132, 22);
             this.androidOcene.TabIndex = 15;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(8, 217);
+            this.label7.Location = new System.Drawing.Point(11, 267);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 13);
+            this.label7.Size = new System.Drawing.Size(141, 16);
             this.label7.TabIndex = 14;
             this.label7.Text = "android programiranje";
             // 
             // engleskiOcene
             // 
-            this.engleskiOcene.Location = new System.Drawing.Point(122, 188);
+            this.engleskiOcene.Location = new System.Drawing.Point(163, 231);
+            this.engleskiOcene.Margin = new System.Windows.Forms.Padding(4);
             this.engleskiOcene.Name = "engleskiOcene";
-            this.engleskiOcene.Size = new System.Drawing.Size(100, 20);
+            this.engleskiOcene.Size = new System.Drawing.Size(132, 22);
             this.engleskiOcene.TabIndex = 13;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(8, 191);
+            this.label8.Location = new System.Drawing.Point(11, 235);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 13);
+            this.label8.Size = new System.Drawing.Size(59, 16);
             this.label8.TabIndex = 12;
             this.label8.Text = "engleski";
             // 
             // dokumentacijaOcene
             // 
-            this.dokumentacijaOcene.Location = new System.Drawing.Point(122, 162);
+            this.dokumentacijaOcene.Location = new System.Drawing.Point(163, 199);
+            this.dokumentacijaOcene.Margin = new System.Windows.Forms.Padding(4);
             this.dokumentacijaOcene.Name = "dokumentacijaOcene";
-            this.dokumentacijaOcene.Size = new System.Drawing.Size(100, 20);
+            this.dokumentacijaOcene.Size = new System.Drawing.Size(132, 22);
             this.dokumentacijaOcene.TabIndex = 11;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(8, 165);
+            this.label9.Location = new System.Drawing.Point(11, 203);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(76, 13);
+            this.label9.Size = new System.Drawing.Size(96, 16);
             this.label9.TabIndex = 10;
             this.label9.Text = "dokumentacija";
             // 
             // bazePodatakaOcene
             // 
-            this.bazePodatakaOcene.Location = new System.Drawing.Point(122, 136);
+            this.bazePodatakaOcene.Location = new System.Drawing.Point(163, 167);
+            this.bazePodatakaOcene.Margin = new System.Windows.Forms.Padding(4);
             this.bazePodatakaOcene.Name = "bazePodatakaOcene";
-            this.bazePodatakaOcene.Size = new System.Drawing.Size(100, 20);
+            this.bazePodatakaOcene.Size = new System.Drawing.Size(132, 22);
             this.bazePodatakaOcene.TabIndex = 9;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(8, 139);
+            this.label10.Location = new System.Drawing.Point(11, 171);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(78, 13);
+            this.label10.Size = new System.Drawing.Size(99, 16);
             this.label10.TabIndex = 8;
             this.label10.Text = "baze podataka";
             // 
             // webOcene
             // 
-            this.webOcene.Location = new System.Drawing.Point(122, 113);
+            this.webOcene.Location = new System.Drawing.Point(163, 139);
+            this.webOcene.Margin = new System.Windows.Forms.Padding(4);
             this.webOcene.Name = "webOcene";
-            this.webOcene.Size = new System.Drawing.Size(100, 20);
+            this.webOcene.Size = new System.Drawing.Size(132, 22);
             this.webOcene.TabIndex = 7;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(8, 113);
+            this.label5.Location = new System.Drawing.Point(11, 139);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(93, 13);
+            this.label5.Size = new System.Drawing.Size(120, 16);
             this.label5.TabIndex = 6;
             this.label5.Text = "web programiranje";
             // 
             // programiranjeOcene
             // 
-            this.programiranjeOcene.Location = new System.Drawing.Point(122, 87);
+            this.programiranjeOcene.Location = new System.Drawing.Point(163, 107);
+            this.programiranjeOcene.Margin = new System.Windows.Forms.Padding(4);
             this.programiranjeOcene.Name = "programiranjeOcene";
-            this.programiranjeOcene.Size = new System.Drawing.Size(100, 20);
+            this.programiranjeOcene.Size = new System.Drawing.Size(132, 22);
             this.programiranjeOcene.TabIndex = 5;
             // 
             // label55
             // 
             this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(8, 87);
+            this.label55.Location = new System.Drawing.Point(11, 107);
+            this.label55.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(70, 13);
+            this.label55.Size = new System.Drawing.Size(92, 16);
             this.label55.TabIndex = 4;
             this.label55.Text = "programiranje";
             // 
             // matematikaOcene
             // 
-            this.matematikaOcene.Location = new System.Drawing.Point(122, 61);
+            this.matematikaOcene.Location = new System.Drawing.Point(163, 75);
+            this.matematikaOcene.Margin = new System.Windows.Forms.Padding(4);
             this.matematikaOcene.Name = "matematikaOcene";
-            this.matematikaOcene.Size = new System.Drawing.Size(100, 20);
+            this.matematikaOcene.Size = new System.Drawing.Size(132, 22);
             this.matematikaOcene.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(8, 61);
+            this.label4.Location = new System.Drawing.Point(11, 75);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 13);
+            this.label4.Size = new System.Drawing.Size(78, 16);
             this.label4.TabIndex = 2;
             this.label4.Text = "matematika";
             // 
             // srpskiOcene
             // 
-            this.srpskiOcene.Location = new System.Drawing.Point(122, 35);
+            this.srpskiOcene.Location = new System.Drawing.Point(163, 43);
+            this.srpskiOcene.Margin = new System.Windows.Forms.Padding(4);
             this.srpskiOcene.Name = "srpskiOcene";
-            this.srpskiOcene.Size = new System.Drawing.Size(100, 20);
+            this.srpskiOcene.Size = new System.Drawing.Size(132, 22);
             this.srpskiOcene.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 35);
+            this.label3.Location = new System.Drawing.Point(11, 43);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.Size = new System.Drawing.Size(44, 16);
             this.label3.TabIndex = 0;
             this.label3.Text = "srpski";
             // 
-            // razredni
+            // dodajListic
             // 
-            this.razredni.Location = new System.Drawing.Point(228, 272);
-            this.razredni.Name = "razredni";
-            this.razredni.Size = new System.Drawing.Size(176, 20);
-            this.razredni.TabIndex = 19;
+            this.dodajListic.BackColor = System.Drawing.Color.Green;
+            this.dodajListic.ForeColor = System.Drawing.Color.White;
+            this.dodajListic.Location = new System.Drawing.Point(483, 517);
+            this.dodajListic.Margin = new System.Windows.Forms.Padding(4);
+            this.dodajListic.Name = "dodajListic";
+            this.dodajListic.Size = new System.Drawing.Size(123, 48);
+            this.dodajListic.TabIndex = 6;
+            this.dodajListic.Text = "Potvrdi";
+            this.dodajListic.UseVisualStyleBackColor = false;
+            this.dodajListic.Click += new System.EventHandler(this.dodajListic_Click);
             // 
-            // button1
+            // ponistiListic
             // 
-            this.button1.BackColor = System.Drawing.Color.Green;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(362, 420);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(92, 39);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Potvrdi";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(362, 465);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(92, 31);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Ponisti";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ponistiListic.Location = new System.Drawing.Point(483, 572);
+            this.ponistiListic.Margin = new System.Windows.Forms.Padding(4);
+            this.ponistiListic.Name = "ponistiListic";
+            this.ponistiListic.Size = new System.Drawing.Size(123, 38);
+            this.ponistiListic.TabIndex = 7;
+            this.ponistiListic.Text = "Ponisti";
+            this.ponistiListic.UseVisualStyleBackColor = true;
+            this.ponistiListic.Click += new System.EventHandler(this.ponistiListic_Click);
             // 
             // poruka
             // 
             this.poruka.AutoSize = true;
-            this.poruka.Location = new System.Drawing.Point(41, 420);
+            this.poruka.Location = new System.Drawing.Point(55, 517);
+            this.poruka.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.poruka.Name = "poruka";
-            this.poruka.Size = new System.Drawing.Size(0, 13);
+            this.poruka.Size = new System.Drawing.Size(0, 16);
             this.poruka.TabIndex = 8;
             // 
             // DodajListicForma
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(487, 531);
+            this.ClientSize = new System.Drawing.Size(649, 654);
             this.Controls.Add(this.poruka);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ponistiListic);
+            this.Controls.Add(this.dodajListic);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.prezimeUcenika);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.imeUcenika);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DodajListicForma";
             this.Text = "DodajListicForma";
             this.groupBox1.ResumeLayout(false);
@@ -360,8 +390,8 @@ namespace Listici
         private System.Windows.Forms.TextBox srpskiOcene;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox razredni;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button dodajListic;
+        private System.Windows.Forms.Button ponistiListic;
         private System.Windows.Forms.Label poruka;
     }
 }

@@ -19,6 +19,7 @@ namespace Listici
 
         private void napraviNoviListic_Click(object sender, EventArgs e)
         {
+            // promena forme
             var frm = new DodajListicForma();
             frm.Location = this.Location;
             frm.StartPosition = FormStartPosition.Manual;

@@ -17,40 +17,48 @@ namespace Listici
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void dodajListic_Click(object sender, EventArgs e)
         {
-                DataAccess db = new DataAccess();
+            DataAccess db = new DataAccess();
+
+            try
+            {
                 // o uceniku
                 string ime = imeUcenika.Text;
                 string prezime = prezimeUcenika.Text;
-
-                // trazimo id ucenika po imenu i prezimenu
-                // ovde ne radi
-                string idUcenika = db.GetUcenik(ime, prezime);
-
-                Ocene ocene = new Ocene();
-                //ocene.IdUcenika = idUcenika;
-                ocene.Srpski = srpskiOcene.Text;
-                ocene.Matematika = matematikaOcene.Text;
-                ocene.Srpski = programiranjeOcene.Text;
-                ocene.Srpski = webOcene.Text;
-                ocene.Srpski = bazePodatakaOcene.Text;
-                ocene.Srpski = dokumentacijaOcene.Text;
-                ocene.Srpski = engleskiOcene.Text;
-                ocene.Srpski = androidOcene.Text;
-                ocene.Sociologija = sociologijaOcene.Text;
 
                 // o staresini
                 string imeRazrednog = razredni.Text.Split(' ')[0];
                 string prezimeRazrednog = razredni.Text.Split(' ')[1];
 
-                poruka.Text = "Podaci poslati!";
+                // trazimo id ucenika po imenu i prezimenu i po razrednom
+                string idUcenika = db.GetUcenik(ime, prezime, imeRazrednog, prezimeRazrednog);
 
-                
+                Ocene ocene = new Ocene();
+                ocene.IdUcenika = int.Parse(idUcenika);
+                ocene.Srpski = srpskiOcene.Text;
+                ocene.Matematika = matematikaOcene.Text;
+                ocene.Programiranje = programiranjeOcene.Text;
+                ocene.Web_programiranje = webOcene.Text;
+                ocene.Baze_podataka = bazePodatakaOcene.Text;
+                ocene.Tehnicka_dokumentacija = dokumentacijaOcene.Text;
+                ocene.Engleski = engleskiOcene.Text;
+                ocene.Android_programiranje = androidOcene.Text;
+                ocene.Sociologija = sociologijaOcene.Text;
+
                 db.NapraviListic(ocene);
+
+                poruka.Text = "Listic dodat!";
+            }
+            catch
+            {
+                poruka.BackColor = Color.Red;
+                poruka.ForeColor = Color.White;
+                poruka.Text = "Greska pri unosu, listic nije dodat!";
+            }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ponistiListic_Click(object sender, EventArgs e)
         {
             // isprazni sve inpute
             imeUcenika.Text = "";

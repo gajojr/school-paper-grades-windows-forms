@@ -18,6 +18,5 @@ namespace Listici
         public string Engleski { get; set; }
         public string Android_programiranje { get; set; }
         public string Sociologija { get; set; }
-
     }
 }
