@@ -38,15 +38,15 @@ namespace Listici
             this.label13 = new System.Windows.Forms.Label();
             this.ocene = new System.Windows.Forms.Label();
             this.stanje = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.sociologijaOcene = new System.Windows.Forms.Label();
+            this.androidOcene = new System.Windows.Forms.Label();
+            this.engleskiOcene = new System.Windows.Forms.Label();
+            this.dokumentacijaOcene = new System.Windows.Forms.Label();
             this.bazeOcene = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
+            this.webOcene = new System.Windows.Forms.Label();
+            this.programiranjeOcene = new System.Windows.Forms.Label();
+            this.matematikaOcene = new System.Windows.Forms.Label();
+            this.srpskiOcene = new System.Windows.Forms.Label();
             this.zakljucnaSociologija = new System.Windows.Forms.Label();
             this.zakljucnaAndroid = new System.Windows.Forms.Label();
             this.zakljucnaEngleski = new System.Windows.Forms.Label();
@@ -57,7 +57,7 @@ namespace Listici
             this.zakljucnaMatematika = new System.Windows.Forms.Label();
             this.zakljucnaSrpski = new System.Windows.Forms.Label();
             this.zakljucna = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
+            this.razredni = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -127,15 +127,15 @@ namespace Listici
             this.Uspeh.Controls.Add(this.label13);
             this.Uspeh.Controls.Add(this.ocene);
             this.Uspeh.Controls.Add(this.stanje);
-            this.Uspeh.Controls.Add(this.label14);
-            this.Uspeh.Controls.Add(this.label15);
-            this.Uspeh.Controls.Add(this.label16);
-            this.Uspeh.Controls.Add(this.label17);
+            this.Uspeh.Controls.Add(this.sociologijaOcene);
+            this.Uspeh.Controls.Add(this.androidOcene);
+            this.Uspeh.Controls.Add(this.engleskiOcene);
+            this.Uspeh.Controls.Add(this.dokumentacijaOcene);
             this.Uspeh.Controls.Add(this.bazeOcene);
-            this.Uspeh.Controls.Add(this.label18);
-            this.Uspeh.Controls.Add(this.label19);
-            this.Uspeh.Controls.Add(this.label20);
-            this.Uspeh.Controls.Add(this.label21);
+            this.Uspeh.Controls.Add(this.webOcene);
+            this.Uspeh.Controls.Add(this.programiranjeOcene);
+            this.Uspeh.Controls.Add(this.matematikaOcene);
+            this.Uspeh.Controls.Add(this.srpskiOcene);
             this.Uspeh.Controls.Add(this.zakljucnaSociologija);
             this.Uspeh.Controls.Add(this.zakljucnaAndroid);
             this.Uspeh.Controls.Add(this.zakljucnaEngleski);
@@ -146,7 +146,7 @@ namespace Listici
             this.Uspeh.Controls.Add(this.zakljucnaMatematika);
             this.Uspeh.Controls.Add(this.zakljucnaSrpski);
             this.Uspeh.Controls.Add(this.zakljucna);
-            this.Uspeh.Controls.Add(this.label22);
+            this.Uspeh.Controls.Add(this.razredni);
             this.Uspeh.Controls.Add(this.label23);
             this.Uspeh.Controls.Add(this.label24);
             this.Uspeh.Controls.Add(this.label25);
@@ -169,9 +169,9 @@ namespace Listici
             // 
             this.label13.Location = new System.Drawing.Point(7, 19);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(45, 16);
+            this.label13.Size = new System.Drawing.Size(73, 16);
             this.label13.TabIndex = 0;
-            this.label13.Text = "predmeti";
+            this.label13.Text = "Predmeti";
             // 
             // ocene
             // 
@@ -187,171 +187,152 @@ namespace Listici
             this.stanje.AutoSize = true;
             this.stanje.Location = new System.Drawing.Point(164, 337);
             this.stanje.Name = "stanje";
-            this.stanje.Size = new System.Drawing.Size(45, 16);
+            this.stanje.Size = new System.Drawing.Size(0, 16);
             this.stanje.TabIndex = 39;
-            this.stanje.Text = "label6";
             // 
-            // label14
+            // sociologijaOcene
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(199, 295);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(52, 16);
-            this.label14.TabIndex = 38;
-            this.label14.Text = "label20";
+            this.sociologijaOcene.AutoSize = true;
+            this.sociologijaOcene.Location = new System.Drawing.Point(199, 295);
+            this.sociologijaOcene.Name = "sociologijaOcene";
+            this.sociologijaOcene.Size = new System.Drawing.Size(0, 16);
+            this.sociologijaOcene.TabIndex = 38;
             // 
-            // label15
+            // androidOcene
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(199, 266);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(52, 16);
-            this.label15.TabIndex = 37;
-            this.label15.Text = "label19";
+            this.androidOcene.AutoSize = true;
+            this.androidOcene.Location = new System.Drawing.Point(199, 266);
+            this.androidOcene.Name = "androidOcene";
+            this.androidOcene.Size = new System.Drawing.Size(0, 16);
+            this.androidOcene.TabIndex = 37;
             // 
-            // label16
+            // engleskiOcene
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(199, 234);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(52, 16);
-            this.label16.TabIndex = 36;
-            this.label16.Text = "label18";
+            this.engleskiOcene.AutoSize = true;
+            this.engleskiOcene.Location = new System.Drawing.Point(199, 234);
+            this.engleskiOcene.Name = "engleskiOcene";
+            this.engleskiOcene.Size = new System.Drawing.Size(0, 16);
+            this.engleskiOcene.TabIndex = 36;
             // 
-            // label17
+            // dokumentacijaOcene
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(199, 205);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(52, 16);
-            this.label17.TabIndex = 35;
-            this.label17.Text = "label17";
+            this.dokumentacijaOcene.AutoSize = true;
+            this.dokumentacijaOcene.Location = new System.Drawing.Point(199, 205);
+            this.dokumentacijaOcene.Name = "dokumentacijaOcene";
+            this.dokumentacijaOcene.Size = new System.Drawing.Size(0, 16);
+            this.dokumentacijaOcene.TabIndex = 35;
             // 
             // bazeOcene
             // 
             this.bazeOcene.AutoSize = true;
             this.bazeOcene.Location = new System.Drawing.Point(199, 173);
             this.bazeOcene.Name = "bazeOcene";
-            this.bazeOcene.Size = new System.Drawing.Size(52, 16);
+            this.bazeOcene.Size = new System.Drawing.Size(0, 16);
             this.bazeOcene.TabIndex = 34;
-            this.bazeOcene.Text = "label16";
             // 
-            // label18
+            // webOcene
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(199, 142);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(52, 16);
-            this.label18.TabIndex = 33;
-            this.label18.Text = "label15";
+            this.webOcene.AutoSize = true;
+            this.webOcene.Location = new System.Drawing.Point(199, 142);
+            this.webOcene.Name = "webOcene";
+            this.webOcene.Size = new System.Drawing.Size(0, 16);
+            this.webOcene.TabIndex = 33;
             // 
-            // label19
+            // programiranjeOcene
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(199, 113);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(52, 16);
-            this.label19.TabIndex = 32;
-            this.label19.Text = "label14";
+            this.programiranjeOcene.AutoSize = true;
+            this.programiranjeOcene.Location = new System.Drawing.Point(199, 113);
+            this.programiranjeOcene.Name = "programiranjeOcene";
+            this.programiranjeOcene.Size = new System.Drawing.Size(0, 16);
+            this.programiranjeOcene.TabIndex = 32;
             // 
-            // label20
+            // matematikaOcene
             // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(199, 78);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(52, 16);
-            this.label20.TabIndex = 31;
-            this.label20.Text = "label13";
+            this.matematikaOcene.AutoSize = true;
+            this.matematikaOcene.Location = new System.Drawing.Point(199, 78);
+            this.matematikaOcene.Name = "matematikaOcene";
+            this.matematikaOcene.Size = new System.Drawing.Size(0, 16);
+            this.matematikaOcene.TabIndex = 31;
             // 
-            // label21
+            // srpskiOcene
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(199, 43);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(45, 16);
-            this.label21.TabIndex = 30;
-            this.label21.Text = "label6";
+            this.srpskiOcene.AutoSize = true;
+            this.srpskiOcene.Location = new System.Drawing.Point(199, 43);
+            this.srpskiOcene.Name = "srpskiOcene";
+            this.srpskiOcene.Size = new System.Drawing.Size(0, 16);
+            this.srpskiOcene.TabIndex = 30;
             // 
             // zakljucnaSociologija
             // 
             this.zakljucnaSociologija.AutoSize = true;
             this.zakljucnaSociologija.Location = new System.Drawing.Point(431, 295);
             this.zakljucnaSociologija.Name = "zakljucnaSociologija";
-            this.zakljucnaSociologija.Size = new System.Drawing.Size(52, 16);
+            this.zakljucnaSociologija.Size = new System.Drawing.Size(0, 16);
             this.zakljucnaSociologija.TabIndex = 29;
-            this.zakljucnaSociologija.Text = "label20";
             // 
             // zakljucnaAndroid
             // 
             this.zakljucnaAndroid.AutoSize = true;
             this.zakljucnaAndroid.Location = new System.Drawing.Point(431, 266);
             this.zakljucnaAndroid.Name = "zakljucnaAndroid";
-            this.zakljucnaAndroid.Size = new System.Drawing.Size(52, 16);
+            this.zakljucnaAndroid.Size = new System.Drawing.Size(0, 16);
             this.zakljucnaAndroid.TabIndex = 28;
-            this.zakljucnaAndroid.Text = "label19";
             // 
             // zakljucnaEngleski
             // 
             this.zakljucnaEngleski.AutoSize = true;
             this.zakljucnaEngleski.Location = new System.Drawing.Point(431, 234);
             this.zakljucnaEngleski.Name = "zakljucnaEngleski";
-            this.zakljucnaEngleski.Size = new System.Drawing.Size(52, 16);
+            this.zakljucnaEngleski.Size = new System.Drawing.Size(0, 16);
             this.zakljucnaEngleski.TabIndex = 27;
-            this.zakljucnaEngleski.Text = "label18";
             // 
             // zakljucnaDokumentacija
             // 
             this.zakljucnaDokumentacija.AutoSize = true;
             this.zakljucnaDokumentacija.Location = new System.Drawing.Point(431, 205);
             this.zakljucnaDokumentacija.Name = "zakljucnaDokumentacija";
-            this.zakljucnaDokumentacija.Size = new System.Drawing.Size(52, 16);
+            this.zakljucnaDokumentacija.Size = new System.Drawing.Size(0, 16);
             this.zakljucnaDokumentacija.TabIndex = 26;
-            this.zakljucnaDokumentacija.Text = "label17";
             // 
             // zakljucnaBaze
             // 
             this.zakljucnaBaze.AutoSize = true;
             this.zakljucnaBaze.Location = new System.Drawing.Point(431, 173);
             this.zakljucnaBaze.Name = "zakljucnaBaze";
-            this.zakljucnaBaze.Size = new System.Drawing.Size(52, 16);
+            this.zakljucnaBaze.Size = new System.Drawing.Size(0, 16);
             this.zakljucnaBaze.TabIndex = 25;
-            this.zakljucnaBaze.Text = "label16";
             // 
             // zakljucnaWeb
             // 
             this.zakljucnaWeb.AutoSize = true;
             this.zakljucnaWeb.Location = new System.Drawing.Point(431, 142);
             this.zakljucnaWeb.Name = "zakljucnaWeb";
-            this.zakljucnaWeb.Size = new System.Drawing.Size(52, 16);
+            this.zakljucnaWeb.Size = new System.Drawing.Size(0, 16);
             this.zakljucnaWeb.TabIndex = 24;
-            this.zakljucnaWeb.Text = "label15";
             // 
             // zakljucnaProgramiranje
             // 
             this.zakljucnaProgramiranje.AutoSize = true;
             this.zakljucnaProgramiranje.Location = new System.Drawing.Point(431, 113);
             this.zakljucnaProgramiranje.Name = "zakljucnaProgramiranje";
-            this.zakljucnaProgramiranje.Size = new System.Drawing.Size(52, 16);
+            this.zakljucnaProgramiranje.Size = new System.Drawing.Size(0, 16);
             this.zakljucnaProgramiranje.TabIndex = 23;
-            this.zakljucnaProgramiranje.Text = "label14";
             // 
             // zakljucnaMatematika
             // 
             this.zakljucnaMatematika.AutoSize = true;
             this.zakljucnaMatematika.Location = new System.Drawing.Point(431, 78);
             this.zakljucnaMatematika.Name = "zakljucnaMatematika";
-            this.zakljucnaMatematika.Size = new System.Drawing.Size(52, 16);
+            this.zakljucnaMatematika.Size = new System.Drawing.Size(0, 16);
             this.zakljucnaMatematika.TabIndex = 22;
-            this.zakljucnaMatematika.Text = "label13";
             // 
             // zakljucnaSrpski
             // 
             this.zakljucnaSrpski.AutoSize = true;
             this.zakljucnaSrpski.Location = new System.Drawing.Point(431, 43);
             this.zakljucnaSrpski.Name = "zakljucnaSrpski";
-            this.zakljucnaSrpski.Size = new System.Drawing.Size(45, 16);
+            this.zakljucnaSrpski.Size = new System.Drawing.Size(0, 16);
             this.zakljucnaSrpski.TabIndex = 21;
-            this.zakljucnaSrpski.Text = "label6";
             // 
             // zakljucna
             // 
@@ -362,15 +343,15 @@ namespace Listici
             this.zakljucna.TabIndex = 20;
             this.zakljucna.Text = "Zakljucna";
             // 
-            // label22
+            // razredni
             // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(164, 380);
-            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(120, 16);
-            this.label22.TabIndex = 18;
-            this.label22.Text = "Razredni staresina";
+            this.razredni.AutoSize = true;
+            this.razredni.Location = new System.Drawing.Point(164, 380);
+            this.razredni.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.razredni.Name = "razredni";
+            this.razredni.Size = new System.Drawing.Size(126, 16);
+            this.razredni.TabIndex = 18;
+            this.razredni.Text = "Razredni staresina: ";
             // 
             // label23
             // 
@@ -533,15 +514,15 @@ namespace Listici
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label ocene;
         private System.Windows.Forms.Label stanje;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label sociologijaOcene;
+        private System.Windows.Forms.Label androidOcene;
+        private System.Windows.Forms.Label engleskiOcene;
+        private System.Windows.Forms.Label dokumentacijaOcene;
         private System.Windows.Forms.Label bazeOcene;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label webOcene;
+        private System.Windows.Forms.Label programiranjeOcene;
+        private System.Windows.Forms.Label matematikaOcene;
+        private System.Windows.Forms.Label srpskiOcene;
         private System.Windows.Forms.Label zakljucnaSociologija;
         private System.Windows.Forms.Label zakljucnaAndroid;
         private System.Windows.Forms.Label zakljucnaEngleski;
@@ -552,7 +533,7 @@ namespace Listici
         private System.Windows.Forms.Label zakljucnaMatematika;
         private System.Windows.Forms.Label zakljucnaSrpski;
         private System.Windows.Forms.Label zakljucna;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label razredni;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;

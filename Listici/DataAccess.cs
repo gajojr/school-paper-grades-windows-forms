@@ -38,21 +38,6 @@ namespace Listici
             }
         }
 
-        public List<int> FindOdeljenjeAbdRazredniId(string imeOdeljenja)
-        {
-            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("GajovaDB")))
-            {
-                List<Odeljenje> odeljenja = connection.Query<Odeljenje>($"SELECT * FROM Odeljenje WHERE ime = '{imeOdeljenja}'").ToList();
-                List<Razredni> razredni = connection.Query<Razredni>($"SELECT * FROM Razredni WHERE id_odeljenja = '{odeljenja[0].Id}'").ToList();
-
-                List<int> ids = new List<int>();
-                ids.Add(odeljenja[0].Id);
-                ids.Add(razredni[0].Id);
-
-                return ids;
-            }
-        }
-
         public void NapraviListic(Ocene ocene)
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("GajovaDB")))
@@ -71,6 +56,61 @@ namespace Listici
                     Android_programiranje = ocene.Android_programiranje,
                     Sociologija = ocene.Sociologija
                 });
+            }
+        }
+
+        public List<int> FindOdeljenjeAbdRazredniId(string imeOdeljenja)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("GajovaDB")))
+            {
+                List<Odeljenje> odeljenja = connection.Query<Odeljenje>($"SELECT * FROM Odeljenje WHERE ime = '{imeOdeljenja}'").ToList();
+                List<Razredni> razredni = connection.Query<Razredni>($"SELECT * FROM Razredni WHERE id_odeljenja = '{odeljenja[0].Id}'").ToList();
+
+                List<int> ids = new List<int>();
+                ids.Add(odeljenja[0].Id);
+                ids.Add(razredni[0].Id);
+
+                return ids;
+            }
+        }
+
+        public int FindOdeljenjeId(string imeOdeljenja)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("GajovaDB")))
+            {
+                List<Odeljenje> odeljenja = connection.Query<Odeljenje>($"SELECT * FROM Odeljenje WHERE ime = '{imeOdeljenja}'").ToList();
+
+                return odeljenja[0].Id;
+            }
+        }
+
+        public int FindUcenikId(string ime, string prezime, int idOdeljenja)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("GajovaDB")))
+            {
+                List<Ucenik> ucenici = connection.Query<Ucenik>($"SELECT * FROM Ucenik WHERE ime = '{ime}' AND prezime = '{prezime}' AND id_odeljenja = '{idOdeljenja}'").ToList();
+
+                return ucenici[0].Id;
+            }
+        }
+
+        public Ocene FindOcene(int idUcenika)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("GajovaDB")))
+            {
+                List<Ocene> ocene = connection.Query<Ocene>($"SELECT * FROM Ocene WHERE IdUcenika = '{idUcenika}'").ToList();
+
+                return ocene[0];
+            }
+        }
+
+        public string FindRazredni(int idOdeljenja)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("GajovaDB")))
+            {
+                List<Razredni> razredni = connection.Query<Razredni>($"SELECT * FROM Razredni WHERE id_odeljenja = '{idOdeljenja}'").ToList();
+
+                return razredni[0].Ime + ' ' + razredni[0].Prezime;
             }
         }
     }
