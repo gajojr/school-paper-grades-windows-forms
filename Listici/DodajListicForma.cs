@@ -17,7 +17,7 @@ namespace Listici
             InitializeComponent();
         }
 
-        private void dodajListic_Click(object sender, EventArgs e)
+        private void dodajListic_Click_1(object sender, EventArgs e)
         {
             DataAccess db = new DataAccess();
 
@@ -58,7 +58,7 @@ namespace Listici
             }
         }
 
-        private void ponistiListic_Click(object sender, EventArgs e)
+        private void ponistiListic_Click_1(object sender, EventArgs e)
         {
             // isprazni sve inpute
             imeUcenika.Text = "";
@@ -67,6 +67,7 @@ namespace Listici
             matematikaOcene.Text = "";
             programiranjeOcene.Text = "";
             webOcene.Text = "";
+            bazePodatakaOcene.Text = "";
             bazePodatakaOcene.Text = "";
             dokumentacijaOcene.Text = "";
             engleskiOcene.Text = "";

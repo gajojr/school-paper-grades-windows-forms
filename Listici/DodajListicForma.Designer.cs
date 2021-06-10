@@ -29,10 +29,9 @@ namespace Listici
         /// </summary>
         private void InitializeComponent()
         {
-            this.imeUcenika = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.prezimeUcenika = new System.Windows.Forms.TextBox();
+            this.poruka = new System.Windows.Forms.Label();
+            this.ponistiListic = new System.Windows.Forms.Button();
+            this.dodajListic = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.razredni = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -54,47 +53,45 @@ namespace Listici
             this.label4 = new System.Windows.Forms.Label();
             this.srpskiOcene = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.dodajListic = new System.Windows.Forms.Button();
-            this.ponistiListic = new System.Windows.Forms.Button();
-            this.poruka = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.prezimeUcenika = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.imeUcenika = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // imeUcenika
+            // poruka
             // 
-            this.imeUcenika.Location = new System.Drawing.Point(180, 34);
-            this.imeUcenika.Margin = new System.Windows.Forms.Padding(4);
-            this.imeUcenika.Name = "imeUcenika";
-            this.imeUcenika.Size = new System.Drawing.Size(192, 22);
-            this.imeUcenika.TabIndex = 0;
+            this.poruka.AutoSize = true;
+            this.poruka.Location = new System.Drawing.Point(49, 561);
+            this.poruka.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.poruka.Name = "poruka";
+            this.poruka.Size = new System.Drawing.Size(0, 16);
+            this.poruka.TabIndex = 24;
             // 
-            // label2
+            // ponistiListic
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(55, 38);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Ime ucenika:";
+            this.ponistiListic.Location = new System.Drawing.Point(450, 584);
+            this.ponistiListic.Margin = new System.Windows.Forms.Padding(4);
+            this.ponistiListic.Name = "ponistiListic";
+            this.ponistiListic.Size = new System.Drawing.Size(123, 38);
+            this.ponistiListic.TabIndex = 23;
+            this.ponistiListic.Text = "Ponisti";
+            this.ponistiListic.UseVisualStyleBackColor = true;
+            this.ponistiListic.Click += new System.EventHandler(this.ponistiListic_Click_1);
             // 
-            // label1
+            // dodajListic
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 81);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 16);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Prezime ucenika:";
-            // 
-            // prezimeUcenika
-            // 
-            this.prezimeUcenika.Location = new System.Drawing.Point(180, 78);
-            this.prezimeUcenika.Margin = new System.Windows.Forms.Padding(4);
-            this.prezimeUcenika.Name = "prezimeUcenika";
-            this.prezimeUcenika.Size = new System.Drawing.Size(192, 22);
-            this.prezimeUcenika.TabIndex = 3;
+            this.dodajListic.BackColor = System.Drawing.Color.Green;
+            this.dodajListic.ForeColor = System.Drawing.Color.White;
+            this.dodajListic.Location = new System.Drawing.Point(450, 529);
+            this.dodajListic.Margin = new System.Windows.Forms.Padding(4);
+            this.dodajListic.Name = "dodajListic";
+            this.dodajListic.Size = new System.Drawing.Size(123, 48);
+            this.dodajListic.TabIndex = 22;
+            this.dodajListic.Text = "Potvrdi";
+            this.dodajListic.UseVisualStyleBackColor = false;
+            this.dodajListic.Click += new System.EventHandler(this.dodajListic_Click_1);
             // 
             // groupBox1
             // 
@@ -118,12 +115,12 @@ namespace Listici
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.srpskiOcene);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Location = new System.Drawing.Point(59, 129);
+            this.groupBox1.Location = new System.Drawing.Point(26, 123);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(547, 368);
-            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ocene";
             // 
@@ -307,44 +304,47 @@ namespace Listici
             this.label3.TabIndex = 0;
             this.label3.Text = "srpski";
             // 
-            // dodajListic
+            // label1
             // 
-            this.dodajListic.BackColor = System.Drawing.Color.Green;
-            this.dodajListic.ForeColor = System.Drawing.Color.White;
-            this.dodajListic.Location = new System.Drawing.Point(483, 517);
-            this.dodajListic.Margin = new System.Windows.Forms.Padding(4);
-            this.dodajListic.Name = "dodajListic";
-            this.dodajListic.Size = new System.Drawing.Size(123, 48);
-            this.dodajListic.TabIndex = 6;
-            this.dodajListic.Text = "Potvrdi";
-            this.dodajListic.UseVisualStyleBackColor = false;
-            this.dodajListic.Click += new System.EventHandler(this.dodajListic_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(22, 75);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 16);
+            this.label1.TabIndex = 20;
+            this.label1.Text = "Prezime ucenika:";
             // 
-            // ponistiListic
+            // prezimeUcenika
             // 
-            this.ponistiListic.Location = new System.Drawing.Point(483, 572);
-            this.ponistiListic.Margin = new System.Windows.Forms.Padding(4);
-            this.ponistiListic.Name = "ponistiListic";
-            this.ponistiListic.Size = new System.Drawing.Size(123, 38);
-            this.ponistiListic.TabIndex = 7;
-            this.ponistiListic.Text = "Ponisti";
-            this.ponistiListic.UseVisualStyleBackColor = true;
-            this.ponistiListic.Click += new System.EventHandler(this.ponistiListic_Click);
+            this.prezimeUcenika.Location = new System.Drawing.Point(147, 72);
+            this.prezimeUcenika.Margin = new System.Windows.Forms.Padding(4);
+            this.prezimeUcenika.Name = "prezimeUcenika";
+            this.prezimeUcenika.Size = new System.Drawing.Size(192, 22);
+            this.prezimeUcenika.TabIndex = 19;
             // 
-            // poruka
+            // label2
             // 
-            this.poruka.AutoSize = true;
-            this.poruka.Location = new System.Drawing.Point(55, 517);
-            this.poruka.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.poruka.Name = "poruka";
-            this.poruka.Size = new System.Drawing.Size(0, 16);
-            this.poruka.TabIndex = 8;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(22, 32);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 16);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Ime ucenika:";
+            // 
+            // imeUcenika
+            // 
+            this.imeUcenika.Location = new System.Drawing.Point(147, 28);
+            this.imeUcenika.Margin = new System.Windows.Forms.Padding(4);
+            this.imeUcenika.Name = "imeUcenika";
+            this.imeUcenika.Size = new System.Drawing.Size(192, 22);
+            this.imeUcenika.TabIndex = 17;
             // 
             // DodajListicForma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(649, 654);
+            this.ClientSize = new System.Drawing.Size(604, 654);
             this.Controls.Add(this.poruka);
             this.Controls.Add(this.ponistiListic);
             this.Controls.Add(this.dodajListic);
@@ -365,11 +365,11 @@ namespace Listici
 
         #endregion
 
-        private System.Windows.Forms.TextBox imeUcenika;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox prezimeUcenika;
+        private System.Windows.Forms.Label poruka;
+        private System.Windows.Forms.Button ponistiListic;
+        private System.Windows.Forms.Button dodajListic;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox razredni;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox sociologijaOcene;
         private System.Windows.Forms.Label label11;
@@ -389,9 +389,9 @@ namespace Listici
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox srpskiOcene;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox razredni;
-        private System.Windows.Forms.Button dodajListic;
-        private System.Windows.Forms.Button ponistiListic;
-        private System.Windows.Forms.Label poruka;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox prezimeUcenika;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox imeUcenika;
     }
 }

@@ -15,7 +15,7 @@ namespace Listici
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("GajovaDB")))
             {
-                List<Ucenik> ucenici = connection.Query<Ucenik>($"SELECT * FROM Ucenik JOIN Razredni ON Ucenik.id_razrednog = Razredni.Id WHERE Razredni.ime = '{imeRazrednog}' AND Razredni.prezime = '{prezimeRazrednog}' AND Ucenik.ime = '{imeUcenika}' AND Ucenik.prezime = '{prezimeUcenika}';").ToList();
+                List<Ucenik> ucenici = connection.Query<Ucenik>($"SELECT Ucenik.Id FROM Ucenik JOIN Razredni ON Ucenik.id_razrednog = Razredni.Id WHERE Razredni.ime = '{imeRazrednog}' AND Razredni.prezime = '{prezimeRazrednog}' AND Ucenik.ime = '{imeUcenika}' AND Ucenik.prezime = '{prezimeUcenika}';").ToList();
 
                 return ucenici[0].Id.ToString();
             }

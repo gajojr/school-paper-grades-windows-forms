@@ -54,6 +54,7 @@ namespace Listici
             this.pogledajPostojeciListic.TabIndex = 1;
             this.pogledajPostojeciListic.Text = "Pogledaj postojeci listic";
             this.pogledajPostojeciListic.UseVisualStyleBackColor = true;
+            this.pogledajPostojeciListic.Click += new System.EventHandler(this.pogledajPostojeciListic_Click);
             // 
             // dodajUcenika
             // 
