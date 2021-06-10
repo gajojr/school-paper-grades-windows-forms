@@ -21,6 +21,38 @@ namespace Listici
             }
         }
 
+        public void CreateUcenik(Ucenik ucenik)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("GajovaDB")))
+            {
+                string sql = "INSERT INTO Ucenik (ime, prezime, email, telefon, id_odeljenja, id_razrednog) VALUES (@Ime, @Prezime, @Email, @Telefon, @IdOdeljenja, @IdRazrednog);";
+                connection.Execute(sql, new
+                {
+                    Ime = ucenik.Ime,
+                    Prezime = ucenik.Prezime,
+                    Email = ucenik.Email,
+                    Telefon = ucenik.Telefon,
+                    IdOdeljenja = ucenik.IdOdeljenja,
+                    IdRazrednog = ucenik.IdRazrednog
+                });
+            }
+        }
+
+        public List<int> FindOdeljenjeAbdRazredniId(string imeOdeljenja)
+        {
+            using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("GajovaDB")))
+            {
+                List<Odeljenje> odeljenja = connection.Query<Odeljenje>($"SELECT * FROM Odeljenje WHERE ime = '{imeOdeljenja}'").ToList();
+                List<Razredni> razredni = connection.Query<Razredni>($"SELECT * FROM Razredni WHERE id_odeljenja = '{odeljenja[0].Id}'").ToList();
+
+                List<int> ids = new List<int>();
+                ids.Add(odeljenja[0].Id);
+                ids.Add(razredni[0].Id);
+
+                return ids;
+            }
+        }
+
         public void NapraviListic(Ocene ocene)
         {
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("GajovaDB")))

@@ -12,3 +12,4 @@ C:\Profesionalni projekti\c#\Listici\Listici\bin\Debug\Dapper.xml
 C:\Profesionalni projekti\c#\Listici\Listici\obj\Debug\Listici.Form1.resources
 C:\Profesionalni projekti\c#\Listici\Listici\obj\Debug\Listici.csproj.CopyComplete
 C:\Profesionalni projekti\c#\Listici\Listici\obj\Debug\Listici.DodajListicForma.resources
+C:\Profesionalni projekti\c#\Listici\Listici\obj\Debug\Listici.DodajUcenika.resources

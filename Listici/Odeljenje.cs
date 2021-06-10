@@ -8,6 +8,7 @@ namespace Listici
 {
     public class Odeljenje
     {
+        public int Id { get; set; }
         public string Ime { get; set; }
         public string Smer { get; set; }
     }

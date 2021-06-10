@@ -27,5 +27,16 @@ namespace Listici
             frm.Show();
             this.Hide();
         }
+
+        private void dodajUcenika_Click(object sender, EventArgs e)
+        {
+            // promena forme
+            var frm = new DodajUcenika();
+            frm.Location = this.Location;
+            frm.StartPosition = FormStartPosition.Manual;
+            frm.FormClosing += delegate { this.Show(); };
+            frm.Show();
+            this.Hide();
+        }
     }
 }

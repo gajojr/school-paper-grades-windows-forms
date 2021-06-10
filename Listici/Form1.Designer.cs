@@ -31,13 +31,15 @@ namespace Listici
         {
             this.napraviNoviListic = new System.Windows.Forms.Button();
             this.pogledajPostojeciListic = new System.Windows.Forms.Button();
+            this.dodajUcenika = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // napraviNoviListic
             // 
-            this.napraviNoviListic.Location = new System.Drawing.Point(120, 93);
+            this.napraviNoviListic.Location = new System.Drawing.Point(160, 114);
+            this.napraviNoviListic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.napraviNoviListic.Name = "napraviNoviListic";
-            this.napraviNoviListic.Size = new System.Drawing.Size(134, 23);
+            this.napraviNoviListic.Size = new System.Drawing.Size(179, 28);
             this.napraviNoviListic.TabIndex = 0;
             this.napraviNoviListic.Text = "Napravi novi listic";
             this.napraviNoviListic.UseVisualStyleBackColor = true;
@@ -45,20 +47,33 @@ namespace Listici
             // 
             // pogledajPostojeciListic
             // 
-            this.pogledajPostojeciListic.Location = new System.Drawing.Point(120, 176);
+            this.pogledajPostojeciListic.Location = new System.Drawing.Point(160, 217);
+            this.pogledajPostojeciListic.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pogledajPostojeciListic.Name = "pogledajPostojeciListic";
-            this.pogledajPostojeciListic.Size = new System.Drawing.Size(134, 23);
+            this.pogledajPostojeciListic.Size = new System.Drawing.Size(179, 28);
             this.pogledajPostojeciListic.TabIndex = 1;
             this.pogledajPostojeciListic.Text = "Pogledaj postojeci listic";
             this.pogledajPostojeciListic.UseVisualStyleBackColor = true;
             // 
+            // dodajUcenika
+            // 
+            this.dodajUcenika.Location = new System.Drawing.Point(160, 168);
+            this.dodajUcenika.Name = "dodajUcenika";
+            this.dodajUcenika.Size = new System.Drawing.Size(179, 28);
+            this.dodajUcenika.TabIndex = 2;
+            this.dodajUcenika.Text = "Dodaj novog ucenika";
+            this.dodajUcenika.UseVisualStyleBackColor = true;
+            this.dodajUcenika.Click += new System.EventHandler(this.dodajUcenika_Click);
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 348);
+            this.ClientSize = new System.Drawing.Size(548, 428);
+            this.Controls.Add(this.dodajUcenika);
             this.Controls.Add(this.pogledajPostojeciListic);
             this.Controls.Add(this.napraviNoviListic);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -69,6 +84,7 @@ namespace Listici
 
         private System.Windows.Forms.Button napraviNoviListic;
         private System.Windows.Forms.Button pogledajPostojeciListic;
+        private System.Windows.Forms.Button dodajUcenika;
     }
 }
 

@@ -57,6 +57,12 @@
     <Compile Include="DodajListicForma.Designer.cs">
       <DependentUpon>DodajListicForma.cs</DependentUpon>
     </Compile>
+    <Compile Include="DodajUcenika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajUcenika.Designer.cs">
+      <DependentUpon>DodajUcenika.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     <Compile Include="Ucenik.cs" />
     <EmbeddedResource Include="DodajListicForma.resx">
       <DependentUpon>DodajListicForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajUcenika.resx">
+      <DependentUpon>DodajUcenika.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
